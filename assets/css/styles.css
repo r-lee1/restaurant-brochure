@@ -7,7 +7,7 @@
 
   /* Colors */
   --first-color: #FADB00;
-  --first-color-alt: #FF0000;
+  --first-color-alt: #FFE866;
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
@@ -120,6 +120,11 @@ img {
   margin-right: var(--mb-2);
 }
 
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .l-header {
   width: 100%;
   position: fixed;
@@ -189,6 +194,81 @@ img {
 .active-link {
   color: var(--first-color);
 }
+
+/* header on scroll */
+.scroll-header {
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* scroll top icon */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background: var(--first-color);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  visibility: hidden;
+}
+
+.scrolltop:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrolltop__icon {
+  font-size: 1.8rem;
+  color: var(--body-color);
+}
+
+/* Show scrolltop */
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
+/*== Home ===*/
+.home__container {
+  height: calc(100vh - var(--header-height));
+  align-content: center;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.home__subtitle {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-4);
+}
+
+.home__img {
+  width: 300px;
+  justify-self: center;
+}
+
+/*== Buttons ==*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--text-color);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
 
 
 

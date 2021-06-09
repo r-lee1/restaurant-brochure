@@ -13,6 +13,11 @@
     <title>Delicious Burgers</title>
   </head>
   <body>
+    <!-- Scroll top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
     <!-- Header -->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
@@ -20,11 +25,11 @@
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Our Story</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Menu</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#our-story" class="nav__link">Our Story</a></li>
+            <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#contact-us" class="nav__link">Contact Us</a></li>
           </ul>
         </div>
 
@@ -34,7 +39,27 @@
       </nav>
     </header>
 
+    <main class="l-main">
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <h1 class="home__title">Best Burgers</h1>
+            <h2 class="home__subtitle">Patties, Cheese, Veggies, and Buns</h2>
+            <a href="#menu" class="button">View Menu</a>
+          </div>
+
+          <img src="assets/img/home.jpeg" alt="home.jpeg" class="home__img">
+        </div>
+      </section>
+
+      <!-- Our Story -->
+      <!-- Menu -->
+      <!-- Services -->
+      <!-- Contact Us -->
+    </main>
+
     <!-- Main JS -->
-    <script  src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
