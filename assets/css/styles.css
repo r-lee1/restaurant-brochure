@@ -252,6 +252,7 @@ img {
 
 .home__img {
   width: 300px;
+  border-radius: .5rem;
   justify-self: center;
 }
 
@@ -284,8 +285,32 @@ img {
   justify-self: center;
 }
 
+/*== Our Food ==*/
+.our-food__container {
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
 
+.our-food__content {
+  text-align: center;
+}
 
+.our-food__img {
+  width: 64px;
+  height: 64px;
+  fill: var(--first-color);
+  margin-bottom: var(--mb-2);
+}
+
+.our-food__title {
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.our-food__description {
+  padding: 0 1.5rem;
+}
 
 
 
