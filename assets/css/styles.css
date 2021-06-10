@@ -351,3 +351,24 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+/*== Contact ==*/
+.contact__data {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact__info, .contact__hours {
+  padding: .75rem;
+}
+
+.contact__title {
+  margin-bottom: var(--mb-1);
+}
+
+.contact__detail {
+  display: inline-block;
+  margin-bottom: var(--mb-2);
+}
