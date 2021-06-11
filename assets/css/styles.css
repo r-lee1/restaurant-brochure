@@ -352,6 +352,10 @@ img {
 }
 
 /*== Contact ==*/
+.contact__container {
+  margin-top: 5rem;
+}
+
 .contact__data {
   display: flex;
   flex-direction: row;
@@ -409,7 +413,7 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.footer__link:hover {
+.footer__social:hover, .footer__link:hover {
   color: var(--first-color);
 }
 
@@ -447,6 +451,7 @@ img {
 
   .contact__data {
     justify-content: space-evenly;
+    line-height: 2.5;
   }
 
   .our-story__img {
@@ -518,6 +523,16 @@ img {
   .our-story__container {
     column-gap: 7rem;
   }
+
+  .menu__container {
+    grid-template-columns: repeat(4, 220px);
+    column-gap: 2.5rem;
+  }
+
+  .menu__img {
+    width: 135px;
+  }
+
 }
 
 
