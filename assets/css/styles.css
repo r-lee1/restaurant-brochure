@@ -357,7 +357,7 @@ img {
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
-  text-align: center;
+  text-align: initial;
 }
 
 .contact__info, .contact__hours {
@@ -377,12 +377,12 @@ img {
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
+  align-items: end;
 }
 
 .footer__brand {
   display: flex;
   flex-direction: column;
-  max-width: 150px;
 }
 
 .footer__logo {
@@ -426,7 +426,30 @@ img {
   color: var(--text-color-light);
 }
 
+/*== Media Queries ==*/
 
+@media screen and (min-width: 576px) {
+  .home__container,
+  .our-story__container {
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
+  .our-story__data, .our-story__initial,
+  .contact__initial {
+    text-align: initial;
+  }
+
+  .contact__data {
+    justify-content: space-evenly;
+  }
+
+  .our-story__img {
+    width: 380px;
+    order: -1;
+  }
+
+}
 
 
 
